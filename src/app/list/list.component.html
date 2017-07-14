@@ -1,0 +1,24 @@
+<div class="header">
+  <p *ngIf="id==='mens_outerwear'">
+    <img src="assets/images/mens_outerwear.jpg"> mens_outerwear
+  </p>
+  
+  <p *ngIf="id==='ladies_outerwear'">
+    <img src="assets/images/ladies_outerwear.jpg"> ladies_outerwear
+  </p>
+
+  <p *ngIf="id==='mens_tshirts'">
+    <img src="assets/images/mens_tshirts.jpg"> mens_tshirts
+  </p>
+
+  <p *ngIf="id==='ladies_tshirts'">
+    <img src="assets/images/ladies_tshirts.jpg"> ladies_tshirts
+  </p>
+</div>
+
+<div *ngFor="let ware of wears | wearCategory:'1'" class="item">
+  <img src={{ware.image}} width="100%" />
+  [{{ware.cate}}]
+  <p>{{ware.name}}</p>
+  <p>{{ware.price}}</p>
+</div>
