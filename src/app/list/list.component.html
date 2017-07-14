@@ -16,7 +16,7 @@
   </p>
 </div>
 
-<div *ngFor="let ware of wears | wearCategory:'1'" class="item">
+<div *ngFor="let ware of wears | wearCategory:id" class="item">
   <img src={{ware.image}} width="100%" />
   [{{ware.cate}}]
   <p>{{ware.name}}</p>

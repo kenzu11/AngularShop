@@ -8,8 +8,8 @@ import { Wear } from './wear';
 export class WearPipe implements PipeTransform {
 
     transform(items: Wear[], args: string): any {
-//        return items.filter(item => item.cate === args );
-      return items;  
+        return items.filter(item => item.cate === args );
+      //return items;  
     }
     
  
